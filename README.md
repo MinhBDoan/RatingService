@@ -57,4 +57,4 @@ Delete a Rating:
 
 ## UML Sequence Diagram
 
-![UML Diagram](./uml-diagram.png)
+![UML Diagram](./ratingUMLDiagram.drawio.png)
