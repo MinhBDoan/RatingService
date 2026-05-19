@@ -5,9 +5,9 @@ This Rating Microservice allows users to submit, retrieve, and delete user ratin
 ## How to Request Data
 Programs can request data by sending REST API calls over HTTP.
 
+## Example Request using fetch(Add a Rating)
 Add a Rating
 Endpoint: POST /ratings
-## Example Request using fetch(Add a Rating)
 
 await fetch("http://localhost:3000/ratings", {
   method: "POST",
@@ -15,15 +15,15 @@ await fetch("http://localhost:3000/ratings", {
   body: JSON.stringify({ userId: 1, rating: 5 })
 });
 
+## Example Request using fetch(Get Average Rating)
 Get Average Rating
 Endpoint: GET /ratings/average
-## Example Request using fetch(Get Average Rating)
 
 await fetch("http://localhost:3000/ratings/average");
 
+## Example Request using fetch(Delete a Rating)
 Delete a Rating
 Endpoint: DELETE /ratings/:userId
-## Example Request using fetch(Delete a Rating)
 
 await fetch("http://localhost:3000/ratings/1", {
   method: "DELETE"
