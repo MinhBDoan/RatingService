@@ -34,7 +34,6 @@ async function deleteRating() {
     console.log("Delete:", data);
 }
 
-// Running each test
 async function runTest() {
     await addRating();
     await getAverage();
